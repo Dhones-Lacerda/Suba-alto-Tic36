@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suba Alto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+    <!-- <style>
+        /* Estilos adicionais para imagem de fundo e call to action */
+        .hero-image {
+            position: relative;
+            background-image: url('caminho/para/sua/imagem.jpg'); /* Substitua pelo caminho da imagem */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-text a {
+            background-color: #ff6600; /* Cor do botão */
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        .hero-text a:hover {
+            background-color: #e65c00; /* Cor do botão ao passar o mouse */
+        }
+
+        /* Para melhorar a legibilidade sobre a imagem */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Escurece a imagem para o texto se destacar */
+            z-index: 1;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Suba Alto</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre a Escalada</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Image de Chamada para Ação -->
+    <section class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h2>Prepare-se para Subir Mais Alto</h2>
+            <a href="#inscricao">Inscreva-se Agora</a>
+        </div>
+    </section>
+
+    <!-- Seção de Introdução -->
+    <section id="home">
+        <h2>Bem-vindo ao Suba Alto</h2>
+        <p>Desafie seus limites, conquiste novas alturas.</p>
+    </section>
+
+    <!-- Seção: O que é Escalada -->
+    <section id="sobre">
+        <h2>O que é Escalada?</h2>
+        <p>A escalada é um esporte desafiador que envolve a subida de formações rochosas, montanhas ou paredes artificiais, exigindo força física, técnica e concentração.</p>
+        <h3>Tipos de Escalada</h3>
+        <ul>
+            <li>Escalada em Rocha</li>
+            <li>Escalada em Gelo</li>
+            <li>Boulder</li>
+            <li>Escalada Indoor</li>
+        </ul>
+    </section>
+
+    <!-- Seção: Benefícios da Escalada -->
+    <section id="beneficios">
+        <h2>Benefícios da Escalada</h2>
+        <h3>Benefícios Físicos</h3>
+        <p>Melhora a força muscular, resistência e flexibilidade.</p>
+        <h3>Benefícios Mentais</h3>
+        <p>Aumenta a concentração, foco e ajuda a reduzir o estresse.</p>
+        <h3>Benefícios Sociais</h3>
+        <p>Constrói laços sociais e fortalece o trabalho em equipe.</p>
+    </section>
+
+    <!-- Seção: Formulário de Inscrição -->
+    <section id="inscricao">
+        <h2>Inscreva-se Agora</h2>
+        <form action="/enviar-inscricao" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefone">Número de Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+            
+            <label for="experiencia">Nível de Experiência:</label>
+            <select id="experiencia" name="experiencia" required>
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="avancado">Avançado</option>
+            </select>
+            
+            <label for="tipo">Tipo de Escalada de Interesse:</label>
+            <div>
+                <input type="checkbox" id="rocha" name="tipo" value="rocha">
+                <label for="rocha">Escalada em Rocha</label>
+            </div>
+            <div>
+                <input type="checkbox" id="gelo" name="tipo" value="gelo">
+                <label for="gelo">Escalada em Gelo</label>
+            </div>
+            <div>
+                <input type="checkbox" id="boulder" name="tipo" value="boulder">
+                <label for="boulder">Boulder</label>
+            </div>
+            <div>
+                <input type="checkbox" id="indoor" name="tipo" value="indoor">
+                <label for="indoor">Escalada Indoor</label>
+            </div>
+            
+            <label for="preferencia">Preferência de Dias e Horários:</label>
+            <input type="text" id="preferencia" name="preferencia">
+            
+            <label for="saude">Questões de Saúde ou Condições Especiais:</label>
+            <textarea id="saude" name="saude"></textarea>
+            
+            <label for="termo">Assinatura de Termo de Responsabilidade:</label>
+            <input type="checkbox" id="termo" name="termo" required>
+            <label for="termo">Eu aceito os termos e condições.</label>
+            
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </section>
+
+    <!-- Seção: Contato -->
+    <section id="contato">
+        <h2>Contato e Localização</h2>
+        <p>E-mail: contato@subaalto.com.br</p>
+        <p>Telefone: (77) 1234-5678</p>
+        <div id="mapa">
+            <h3>Localização</h3>
+            <p><!-- Mapa interativo seria integrado aqui --></p>
+        </div>
+    </section>
+
+    <!-- Seção: Blog e Notícias -->
+    <section id="blog">
+        <h2>Blog e Notícias</h2>
+        <article>
+            <h3>Últimas Atualizações sobre Escalada</h3>
+            <p><!-- Conteúdo do blog --></p>
+        </article>
+        <article>
+            <h3>Histórias de Sucesso</h3>
+            <p><!-- Conteúdo de histórias inspiradoras --></p>
+        </article>
+        <article>
+            <h3>Próximos Eventos</h3>
+            <p><!-- Informações sobre eventos futuros --></p>
+        </article>
+    </section>
+
+    <!-- Rodapé -->
+    <!--
+    <footer>
+        <p>&copy; 2024 Suba Alto. Todos os direitos reservados.</p>
+    </footer>-->
+</body>
+</html>
