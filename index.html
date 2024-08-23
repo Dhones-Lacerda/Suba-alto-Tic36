@@ -14,12 +14,11 @@
         <h1>Suba Alto</h1>
         <nav>
             <ul>
-                <li><a href="#home">Início</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre a Escalada</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#inscricao">Inscrição</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><a href="#blog">Blog</a></li>
             </ul>
         </nav>
     </header>
@@ -121,7 +120,7 @@
         <h2>Benefícios da Escalada</h2>
         
         <div class="benefit">
-            <img src="https://unsplash.com/photos/UZ5QOHpO1XQ" alt="Benefícios Físicos" class="benefit-img">
+            <img src="./src/assets/img/woman-bouldering-spot.jpg" alt="Benefícios Físicos" class="benefit-img">
             <div class="benefit-text">
                 <h3>Benefícios Físicos</h3>
                 <p>A escalada é um excelente exercício que pode melhorar significativamente sua força, resistência, flexibilidade e coordenação. Ao escalar, você utiliza quase todos os músculos do corpo, o que ajuda a desenvolver força e resistência muscular. A atividade também aumenta a flexibilidade devido aos movimentos amplos e variados que você faz.</p>
@@ -129,7 +128,7 @@
         </div>
 
         <div class="benefit">
-            <img src="https://unsplash.com/photos/9D6A-QO99Fc" alt="Benefícios Mentais" class="benefit-img">
+            <img src="./src/assets/img/top-mountain-100961_1920.jpg" alt="Benefícios Mentais" class="benefit-img">
             <div class="benefit-text">
                 <h3>Benefícios Mentais</h3>
                 <p>Escalada não é apenas um exercício físico, mas também um desafio mental. Ao escalar, você desenvolve habilidades de concentração, foco e resolução de problemas. A necessidade de planejar e executar movimentos complexos sob pressão ajuda a melhorar a sua capacidade de resolver problemas e a manter a calma em situações estressantes.</p>
@@ -137,7 +136,7 @@
         </div>
 
         <div class="benefit">
-            <img src="https://unsplash.com/photos/90ynpNR7wP8" alt="Benefícios Sociais" class="benefit-img">
+            <img src="./src/assets/img/ice-climber-1247613_1920.jpg" alt="Benefícios Sociais" class="benefit-img">
             <div class="benefit-text">
                 <h3>Benefícios Sociais</h3>
                 <p>A escalada é uma atividade social que ajuda a construir uma comunidade forte e a fortalecer laços sociais. Ao participar de atividades de escalada, você encontra pessoas com interesses semelhantes, o que facilita a construção de amizades e o desenvolvimento de habilidades de trabalho em equipe.</p>
@@ -149,20 +148,21 @@
     <section id="inscricao">
         <h2>Inscreva-se Agora</h2>
         <form action="/enviar-inscricao" method="POST">
-            <label for="nome">Nome Completo:</label>
+            <label class="form_label"  for="nome">Nome Completo:</label >
             <input type="text" id="nome" name="nome" required>
             
-            <label for="idade">Idade:</label>
+            <label class="form_label" for="idade">Idade:</label >
             <input type="number" id="idade" name="idade" required>
             
-            <label for="email">E-mail:</label>
+            <label class="form_label" for="email">E-mail:</label >
             <input type="email" id="email" name="email" required>
             
-            <label for="telefone">Número de Telefone:</label>
+            <label class="form_label" for="telefone">Número de Telefone:</label >
             <input type="tel" id="telefone" name="telefone">
             
-            <label for="experiencia">Nível de Experiência:</label>
+            <label class="form_label" for="experiencia">Nível de Experiência:</label>
             <select id="experiencia" name="experiencia" required>
+                <option value="Nunca praticou">Nunca praticou</option>
                 <option value="iniciante">Iniciante</option>
                 <option value="intermediario">Intermediário</option>
                 <option value="avancado">Avançado</option>
@@ -207,32 +207,15 @@
         <p>Telefone: (77) 1234-5678</p>
         <div id="mapa">
             <h3>Localização</h3>
-            <p><!-- Mapa interativo seria integrado aqui --></p>
+            <iframe class="vca_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493586.31458784646!2d-41.146387095447324!3d-14.873275536839873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7463a8cc9b6f68d%3A0xc6f7cd855dc04508!2sVit%C3%B3ria%20da%20Conquista%2C%20BA!5e0!3m2!1spt-BR!2sbr!4v1724450417764!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
-    <!-- Seção: Blog e Notícias -->
-    <section id="blog">
-        <h2>Blog e Notícias</h2>
-        <article>
-            <h3>Últimas Atualizações sobre Escalada</h3>
-            <p><!-- Conteúdo do blog --></p>
-        </article>
-        <article>
-            <h3>Histórias de Sucesso</h3>
-            <p><!-- Conteúdo de histórias inspiradoras --></p>
-        </article>
-        <article>
-            <h3>Próximos Eventos</h3>
-            <p><!-- Informações sobre eventos futuros --></p>
-        </article>
-    </section>
-
     <!-- Rodapé -->
-    <!--
+    
     <footer>
         <p>&copy; 2024 Suba Alto. Todos os direitos reservados.</p>
-    </footer>-->
+    </footer>
     <script src="./dist/index.js"></script>
 </body>
 </html>

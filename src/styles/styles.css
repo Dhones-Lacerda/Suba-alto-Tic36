@@ -308,8 +308,8 @@ header nav ul li a:hover {
 }
 
 .benefit-img {
-    width: 150px; /* Largura da imagem */
-    height: 100px; /* Altura da imagem */
+    width: 250px; /* Largura da imagem */
+    height: 200px; /* Altura da imagem */
     object-fit: cover; /* Ajusta a imagem para preencher o espaço */
     border-radius: 8px; /* Bordas arredondadas para a imagem */
     margin-right: 20px; /* Espaço à direita da imagem */
@@ -334,91 +334,383 @@ header nav ul li a:hover {
 }
 
 #inscricao {
-    padding: 40px 15px; /* Espaçamento interno reduzido */
-    background-color: #ffffff; /* Fundo branco */
+/* Add some padding and margin to the section */
+padding: 20px;
+margin: 40px;
+background-color: #f7f7f7; /* Optional background color */
 }
 
 #inscricao h2 {
-    font-size: 2em; /* Tamanho do título reduzido */
-    color: #00796b; /* Cor verde escura */
-    margin-bottom: 20px; /* Espaço abaixo do título */
-    text-align: center; /* Centraliza o título */
-    font-family: 'Arial', sans-serif; /* Fonte */
+/* Style the heading */
+text-align: center;
+font-weight: bold;
+font-size: 34px;
+margin-bottom: 20px;
+color: var(--azul-escuro);
 }
 
-#inscricao form {
-    max-width: 600px; /* Largura máxima reduzida */
-    margin: 0 auto; /* Centraliza o formulário */
+form {
+/* Style the form container */
+max-width: 500px; /* Adjust the width as needed */
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#inscricao label {
-    display: block; /* Exibe os rótulos como blocos */
-    margin-bottom: 8px; /* Espaço abaixo dos rótulos */
-    font-size: 1em; /* Tamanho da fonte reduzido */
-    color: #333333; /* Cor escura para os rótulos */
-    font-family: 'Arial', sans-serif; /* Fonte */
+label {
+/* Style the labels */
+display: block;
+font-weight: bold;
+color: var(--azul-claro);
+margin-bottom: 10px;
 }
 
-#inscricao input,
-#inscricao select,
-#inscricao textarea {
-    width: 95%; /* Largura reduzida dos campos */
-    padding: 8px; /* Espaçamento interno reduzido */
-    margin-bottom: 15px; /* Espaço abaixo dos campos */
-    border: 1px solid #ccc; /* Borda cinza clara */
-    border-radius: 4px; /* Bordas arredondadas */
-    font-size: 0.9em; /* Tamanho da fonte nos campos reduzido */
-    font-family: 'Arial', sans-serif; /* Fonte */
+input[type="text"], input[type="number"], input[type="email"], input[type="tel"], select {
+/* Style the input fields */
+width: 95%;
+height: 10px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
 }
 
-#inscricao button {
-    background-color: #00796b; /* Cor de fundo verde escuro */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Remove a borda padrão */
-    padding: 12px 18px; /* Espaçamento interno reduzido */
-    font-size: 1em; /* Tamanho da fonte do botão */
-    border-radius: 4px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de ponteiro */
+input[type="checkbox"] {
+/* Style the checkboxes */
+margin-right: 10px;
 }
 
-#inscricao button:hover {
-    background-color: #004d40; /* Cor de fundo mais escura ao passar o mouse */
+input[type="checkbox"] + label {
+/* Style the labels for checkboxes */
+display: inline-block;
+margin-bottom: 20px;
+}
+
+textarea {
+/* Style the textarea */
+width: 95%;
+height: 100px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button[type="submit"] {
+/* Style the submit button */
+width: 100%;
+height: 40px;
+background-color: #4CAF50;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button[type="submit"]:hover {
+/* Style the submit button on hover */
+background-color: #3e8e41;
 }
 
 #contato {
-    padding: 50px 15px; /* Espaçamento interno */
-    background-color: #f7f7f7; /* Fundo cinza claro */
-    text-align: center; /* Centraliza o texto */
-    font-family: 'Arial', sans-serif; /* Fonte */
+/* Add some padding and margin to the section */
+padding: 20px;
+margin: 40px auto; /* Add auto to margin to center the section */
+background-color: #f7f7f7; /* Optional background color */
+text-align: center; /* Add text-align center to center the content */
 }
 
 #contato h2 {
-    font-size: 2em; /* Tamanho do título */
-    color: #00796b; /* Cor verde escura */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+/* Style the heading */
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 20px;
+color: var(--azul-escuro);
 }
 
 #contato p {
-    font-size: 1.2em; /* Tamanho do texto */
-    color: #333333; /* Cor do texto */
-    margin-bottom: 15px; /* Espaço abaixo dos parágrafos */
+/* Style the paragraphs */
+font-size: 16px;
+font-weight: 100;
+line-height: 1.5;
+margin-bottom: 5px;
 }
 
 #mapa {
-    margin-top: 30px; /* Espaço acima do mapa */
-    padding: 20px; /* Espaçamento interno do mapa */
-    background-color: #e0f2f1; /* Fundo verde claro */
-    border-radius: 8px; /* Bordas arredondadas */
+/* Style the map container */
+width: 600px; /* Set the width to match the iframe width */
+margin: 20px auto; /* Add auto to margin to center the map container */
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+text-align: center; /* Add text-align center to center the iframe */
 }
 
 #mapa h3 {
-    font-size: 1.5em; /* Tamanho do subtítulo */
-    color: #004d40; /* Cor verde mais escura */
-    margin-bottom: 15px; /* Espaço abaixo do subtítulo */
+/* Style the heading inside the map container */
+font-weight: bold;
+margin-bottom: 10px;
 }
 
-#mapa p {
-    font-size: 1em; /* Tamanho do texto */
-    color: #555555; /* Cor do texto */
-    margin-bottom: 0; /* Remove o espaço abaixo */
+.vca_map {
+/* Style the iframe */
+width: 100%; /* Set the width to 100% to fill the map container */
+height: 450px; /* Set the height to match the iframe height */
+border: none; /* Remove the border */
+border-radius: 10px; /* Add border radius to match the map container */
+}
+
+/* Estilo para o Rodapé */
+footer {
+    background-color: var(--azul-escuro);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Layout para Tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Estilos para o Header */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    /* Estilos para a Seção Hero */
+    .hero-image {
+        height: 350px;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-text a {
+        padding: 12px 22px;
+        font-size: 1.1em;
+    }
+
+    /* Estilos para a Seção Home */
+    #home h2 {
+        font-size: 2.2em;
+    }
+
+    #home p {
+        font-size: 1.1em;
+        max-width: 80%;
+    }
+
+    /* Estilos para a Seção Histórico da Marca */
+    #historico {
+        padding: 40px 15px;
+        max-width: 85%;
+    }
+
+    #historico h2 {
+        font-size: 2.2em;
+    }
+
+    #historico p {
+        font-size: 1.1em;
+    }
+
+    /* Estilos para a Seção Sobre */
+    .section-title {
+        font-size: 2.2em;
+    }
+
+    .subsection-title {
+        font-size: 2em;
+    }
+
+    .escalada-item img {
+        width: 250px;
+        height: 150px;
+    }
+
+    /* Estilos para a Seção Benefícios da Escalada */
+    .benefit {
+        flex-direction: row;
+    }
+
+    .benefit-img {
+        width: 220px;
+        height: 150px;
+    }
+
+    .benefit-text h3 {
+        font-size: 1.7em;
+    }
+
+    .benefit-text p {
+        font-size: 1.1em;
+    }
+
+    /* Estilos para o Formulário de Inscrição */
+    form {
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        font-size: 1.1em;
+    }
+
+    /* Estilos para o Rodapé */
+    footer p {
+        font-size: 15px;
+    }
+}
+
+/* Layout para Smartphones (480px a 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+
+    /* Estilos para o Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Estilos para a Seção Hero */
+    .hero-image {
+        height: 300px;
+    }
+
+    .hero-text h2 {
+        font-size: 2em;
+    }
+
+    .hero-text a {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    /* Estilos para a Seção Home */
+    #home h2 {
+        font-size: 2em;
+    }
+
+    #home p {
+        font-size: 1em;
+        max-width: 90%;
+    }
+
+    /* Estilos para a Seção Histórico da Marca */
+    #historico {
+        padding: 30px 10px;
+        max-width: 90%;
+    }
+
+    #historico h2 {
+        font-size: 2em;
+    }
+
+    #historico p {
+        font-size: 1em;
+    }
+
+    /* Estilos para a Seção Sobre */
+    .section-title {
+        font-size: 2em;
+    }
+
+    .subsection-title {
+        font-size: 1.8em;
+    }
+
+    .escalada-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .escalada-item {
+        flex-direction: column; /* Alinha a imagem e o texto em coluna */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .escalada-item.esquerda, .escalada-item.direita {
+        flex-direction: column; /* Alinha tudo em coluna, ignorando as classes de lado */
+    }
+
+    .escalada-item img {
+        max-width: 100%; /* A imagem ocupará toda a largura disponível */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .escalada-texto {
+        max-width: 100%; /* Texto ocupará toda a largura disponível */
+    }
+
+    /* Estilos para a Seção Benefícios da Escalada */
+    .benefit {
+        flex-direction: column;
+    }
+
+    .benefit-img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .benefit-text h3 {
+        font-size: 1.6em;
+    }
+
+    .benefit-text p {
+        font-size: 1em;
+    }
+
+    /* Estilos para o Formulário de Inscrição */
+    form {
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+    }
+
+    #mapa {
+        width: 90%; /* Reduz a largura do mapa para 90% da tela */
+        padding: 15px; /* Reduz o padding */
+        box-shadow: none; /* Remove a sombra para simplificar o layout */
+    }
+
+    .vca_map {
+        height: 300px; /* Reduz a altura do mapa para caber melhor na tela */
+    }
+
+    /* Estilos para o Rodapé */
+    footer p {
+        font-size: 14px;
+    }
 }
