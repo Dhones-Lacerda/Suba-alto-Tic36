@@ -45,7 +45,7 @@
    - Instale as dependências do Node.js, se houver: `npm install`
 3. **Inicie o Servidor de Desenvolvimento**:
    - Para um ambiente de desenvolvimento com Node.js, execute: `npm start` (ou o comando apropriado, conforme a configuração)
-4. **Abra o Projeto**: Acesse o projeto em seu navegador no endereço `http://localhost:3000` (ou outro endereço configurado).
+4. **Abra o Projeto**: Acesse o projeto em seu navegador no endereço.
 
 ## Contribuição
 
