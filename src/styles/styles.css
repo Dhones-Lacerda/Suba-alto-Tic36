@@ -9,7 +9,7 @@
 
 /* Header */
 header {
-    background-color: var(--azul-escuro);
+    background-color: var(--azul-claro);
     color: var(--branco);
     padding: 20px;
     display: flex;
@@ -581,8 +581,7 @@ footer p {
     }
 }
 
-/* Layout para Smartphones (480px a 767px) */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
     /* Estilos para o Header */
     header {
@@ -600,18 +599,22 @@ footer p {
         gap: 10px;
     }
 
+    header nav ul li {
+        margin-bottom: 10px; /* Espaçamento entre os links */
+    }
+
     /* Estilos para a Seção Hero */
     .hero-image {
         height: 300px;
     }
 
     .hero-text h2 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .hero-text a {
-        padding: 10px 20px;
-        font-size: 1em;
+        padding: 3px 8px;
+        font-size: 14px;
     }
 
     /* Estilos para a Seção Home */
@@ -647,32 +650,23 @@ footer p {
         font-size: 1.8em;
     }
 
+    .escalada-item {
+        flex-wrap: wrap; /* Add this to wrap the content */
+    }
     .escalada-item img {
         width: 100%;
-        height: auto;
+        height: 150px;
+        object-fit: cover;
     }
-
-    .escalada-item {
-        flex-direction: column; /* Alinha a imagem e o texto em coluna */
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .escalada-item.esquerda, .escalada-item.direita {
-        flex-direction: column; /* Alinha tudo em coluna, ignorando as classes de lado */
-    }
-
-    .escalada-item img {
-        max-width: 100%; /* A imagem ocupará toda a largura disponível */
-        height: auto; /* Mantém a proporção da imagem */
-    }
-
-    .escalada-texto {
-        max-width: 100%; /* Texto ocupará toda a largura disponível */
+    .escalada-item p {
+        width: 100%; /* Make the paragraph take full width */
+        margin-top: 10px;
     }
 
     /* Estilos para a Seção Benefícios da Escalada */
     .benefit {
         flex-direction: column;
+        text-align: center; /* Centraliza o conteúdo */
     }
 
     .benefit-img {
@@ -689,23 +683,53 @@ footer p {
         font-size: 1em;
     }
 
+    /* Estilos para a Seção Vídeos */
+
+    .video-grid {
+        flex-direction: column;
+    }
+
+    .video-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .video-section iframe {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
     /* Estilos para o Formulário de Inscrição */
     form {
         padding: 10px;
+    }
+
+    input[type="text"], input[type="number"], input[type="email"], input[type="tel"], select {
+        width: 88%;
+    }
+
+    textarea {
+        width: 88%;
     }
 
     button[type="submit"] {
         font-size: 1em;
     }
 
+    /* Estilos para o Mapa */
     #mapa {
-        width: 90%; /* Reduz a largura do mapa para 90% da tela */
-        padding: 15px; /* Reduz o padding */
-        box-shadow: none; /* Remove a sombra para simplificar o layout */
+        width: 100%;
+        padding: 15px;
+        box-shadow: none;
     }
 
     .vca_map {
-        height: 300px; /* Reduz a altura do mapa para caber melhor na tela */
+        height: 300px;
+        max-width: 80%; /* Garante que o mapa não estoure o layout */
     }
 
     /* Estilos para o Rodapé */
@@ -713,3 +737,4 @@ footer p {
         font-size: 14px;
     }
 }
+
