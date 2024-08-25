@@ -333,14 +333,13 @@ header nav ul li a:hover {
 }
 
 #inscricao {
-/* Add some padding and margin to the section */
 padding: 20px;
 margin: 40px;
-background-color: #f7f7f7; /* Optional background color */
+background-color: #f7f7f7; /* Cor opcional */
 }
 
 #inscricao h2 {
-/* Style the heading */
+/* Estilos do header */
 text-align: center;
 font-weight: bold;
 font-size: 34px;
@@ -349,8 +348,8 @@ color: var(--azul-escuro);
 }
 
 form {
-/* Style the form container */
-max-width: 500px; /* Adjust the width as needed */
+/* Estilo do form container */
+max-width: 500px; 
 margin: 0 auto;
 padding: 20px;
 background-color: #fff;
@@ -360,7 +359,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
-/* Style the labels */
+/* Estilo para as labels */
 display: block;
 font-weight: bold;
 color: var(--azul-claro);
@@ -368,7 +367,7 @@ margin-bottom: 10px;
 }
 
 input[type="text"], input[type="number"], input[type="email"], input[type="tel"], select {
-/* Style the input fields */
+/* Estilo para os input fields */
 width: 95%;
 height: 10px;
 margin-bottom: 20px;
@@ -383,13 +382,13 @@ margin-right: 10px;
 }
 
 input[type="checkbox"] + label {
-/* Style the labels for checkboxes */
+/* Estilo para o checkbox */
 display: inline-block;
 margin-bottom: 20px;
 }
 
 textarea {
-/* Style the textarea */
+/* Estilo textarea */
 width: 95%;
 height: 100px;
 margin-bottom: 20px;
@@ -399,7 +398,7 @@ border-radius: 5px;
 }
 
 button[type="submit"] {
-/* Style the submit button */
+/* Estilos do botão*/
 width: 100%;
 height: 40px;
 background-color: #4CAF50;
@@ -411,14 +410,12 @@ cursor: pointer;
 }
 
 button[type="submit"]:hover {
-/* Style the submit button on hover */
 background-color: #3e8e41;
 }
 
 #contato {
-/* Add some padding and margin to the section */
 padding: 20px;
-margin: 40px auto; /* Add auto to margin to center the section */
+margin: 40px auto; /*  adiciona auto margen para o centro da seção*/
 background-color: #f7f7f7; /* Optional background color */
 text-align: center; /* Add text-align center to center the content */
 }
@@ -432,7 +429,7 @@ color: var(--azul-escuro);
 }
 
 #contato p {
-/* Style the paragraphs */
+/* Style do paragrafo */
 font-size: 16px;
 font-weight: 100;
 line-height: 1.5;
@@ -440,28 +437,27 @@ margin-bottom: 5px;
 }
 
 #mapa {
-/* Style the map container */
-width: 600px; /* Set the width to match the iframe width */
-margin: 20px auto; /* Add auto to margin to center the map container */
+/* Style do map container */
+width: 600px;
+margin: 20px auto; 
 padding: 20px;
 border: 1px solid #ccc;
 border-radius: 10px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-text-align: center; /* Add text-align center to center the iframe */
+text-align: center;
 }
 
 #mapa h3 {
-/* Style the heading inside the map container */
 font-weight: bold;
 margin-bottom: 10px;
 }
 
 .vca_map {
 /* Style the iframe */
-width: 100%; /* Set the width to 100% to fill the map container */
-height: 450px; /* Set the height to match the iframe height */
-border: none; /* Remove the border */
-border-radius: 10px; /* Add border radius to match the map container */
+width: 100%;
+height: 450px;
+border: none; /* Remove a borda */
+border-radius: 10px; 
 }
 
 /* Estilo para o Rodapé */
@@ -651,7 +647,7 @@ footer p {
     }
 
     .escalada-item {
-        flex-wrap: wrap; /* Add this to wrap the content */
+        flex-wrap: wrap;
     }
     .escalada-item img {
         width: 100%;
@@ -659,7 +655,7 @@ footer p {
         object-fit: cover;
     }
     .escalada-item p {
-        width: 100%; /* Make the paragraph take full width */
+        width: 100%; 
         margin-top: 10px;
     }
 
